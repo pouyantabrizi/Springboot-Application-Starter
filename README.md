@@ -13,10 +13,10 @@ Before read this article I suggest you to read my previous simple project about 
    - [Run the Application](#five)
 
 <h2 id="one">What You Need</h2>
-  - **About 15 minutes**
-  - **A favorite text editor or IDE**
-  - **JDK 1.8 or later**
-  - **Gradle 4+**
+   - About 15 minutes
+   - A favorite text editor or IDE
+   - JDK 1.8 or later
+   - Gradle 4+
 
 <h2 id="two">Learn What You Can Do with Spring Boot</h2>
 Spring Boot offers a fast way to build applications. It looks at your classpath and at the beans you have configured, makes reasonable assumptions about what you are missing, and adds those items. With Spring Boot, you can focus more on business features and less on infrastructure.
@@ -64,6 +64,7 @@ test {
 
 <h2 id="four">Create a Simple Web Application</h2>
 Now you can create a web controller for a simple web application, as the following listing (from src/main/java/com/company/starter/HelloController.java) shows:
+
 ```
 package com.company.starter;
 
@@ -80,6 +81,7 @@ public class HelloController {
 
 }
 ```
+
 The class is flagged as a @RestController, meaning it is ready for use by Spring MVC to handle web requests. @RequestMapping maps / to the index() method. When invoked from a browser or by using curl on the command line,
 the method returns pure text. That is because @RestController combines @Controller and @ResponseBody, two annotations that results in web requests returning data rather than a view.
 
@@ -105,6 +107,7 @@ public class Application {
 
 }
 ```
+
 @SpringBootApplication is a convenience annotation that adds all of the following:
 
 @Configuration: Tags the class as a source of bean definitions for the application context.
@@ -122,5 +125,5 @@ To run the application, run the following command in a terminal window (in the c
 
 ./gradlew bootRun (or gradle bootRun)
 
-now if you browse localhost:8080 on your browser, you can see your application output.
+now if you browse **localhost:8080** on your browser, you can see your application output.
 
