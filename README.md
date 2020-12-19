@@ -13,10 +13,10 @@ Before read this article I suggest you to read my previous simple project about 
    - [Run the Application](#five)
 
 <h2 id="one">What You Need</h2>
-   - About 15 minutes
-   - A favorite text editor or IDE
-   - JDK 1.8 or later
-   - Gradle 4+
+About 15 minutes
+- A favorite text editor or IDE
+- JDK 1.8 or later
+- Gradle 4+
 
 <h2 id="two">Learn What You Can Do with Spring Boot</h2>
 Spring Boot offers a fast way to build applications. It looks at your classpath and at the beans you have configured, makes reasonable assumptions about what you are missing, and adds those items. With Spring Boot, you can focus more on business features and less on infrastructure.
@@ -65,7 +65,7 @@ test {
 <h2 id="four">Create a Simple Web Application</h2>
 Now you can create a web controller for a simple web application, as the following listing (from src/main/java/com/company/starter/HelloController.java) shows:
 
-```
+```java
 package com.company.starter;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -89,7 +89,7 @@ the method returns pure text. That is because @RestController combines @Controll
 
 The Spring Initializr creates a simple application class for you. However, in this case, it is too simple. You need to modify the application class to match the following listing (from src/main/java/com/example/springboot/Application.java):
 
-```
+```java
 package com.company.starter;
 
 import java.util.Arrays;
